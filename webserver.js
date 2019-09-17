@@ -54,8 +54,8 @@ function handler (req, res) {
 }
 
 io.on('connection', function (socket) {
-    socket.emit('datetime', { datetime: new Date() } );
-  });
+    io.emit('datetime', { datetime: new Date() } );
+});
   
 
 
