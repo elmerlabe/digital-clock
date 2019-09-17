@@ -5,16 +5,16 @@ our offices, production area or anywhere inside the building.
 
 
 ### install nodejs
-sudo apt-get update
+> sudo apt-get update
 
-sudo apt-get dist-upgrade
+> sudo apt-get dist-upgrade
 
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+> curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
-sudo apt-get install -y nodejs
+> sudo apt-get install -y nodejs
 
 ### install socket.io
-npm install socket.io --save
+> npm install socket.io --save
 
 ### run script (node webserver.js)
-npm start
+> npm start
