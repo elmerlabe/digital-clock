@@ -4,7 +4,7 @@ var fs = require('fs');
 var io = require('socket.io')(app)
 
 
-//This will open a server at localhost:5000. Navigate to this in your browser.
+//This will open a server at localhost:8080. Navigate to this in your browser.
 app.listen(8080);
 
 // Http handler function
@@ -54,7 +54,10 @@ function handler (req, res) {
 }
 
 io.on('connection', function (socket) {
-    io.emit('datetime', { datetime: new Date() } );
+    setInterval(function() {
+        socket.emit('datetime', {datetime : new Date()});
+    } , 1000);
+    
 });
   
 

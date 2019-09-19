@@ -3,8 +3,14 @@
     src: url(/public/fonts/Orbitron-Regular.ttf);
 }*/
 
+body {
+    background-color: black;
+}
+
 .timeFont {
     font-size: 14rem;
+    letter-spacing: 10px;
+    color: #17D4FE;
     font-family: 'Orbitron', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -19,7 +25,7 @@
 
 .marquee p {
     display: inline-block;
-    color: #73a7f0;
+    color: white;
     font-style: italic;
     padding-left: 100%;
     animation: marquee 8s linear infinite reverse;
